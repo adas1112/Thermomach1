@@ -1,0 +1,154 @@
+.team-heading h3{
+	color:#FFFFFF;
+}
+.team-heading h4{
+    color: rgba(255, 255, 255, 0.47);
+}
+.team-info{
+    position: relative;
+    overflow: hidden;	
+}
+.team-info img{
+	width:100%;
+}
+.team-caption h4{
+    margin:0;
+    color: #212121;
+    font-size: 1em;
+    text-transform: uppercase;
+    line-height: 1.8em;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.team-caption p{
+	color: #FFFFFF;
+    font-size: .9em;
+    margin: 0;
+}
+.team-caption ul{
+    padding: 0;
+    margin: 1em 0 0 0;
+}
+.team-caption ul li{
+    display: inline-block;
+}
+.team-caption ul li a {
+	color: #333;
+    text-align: center;
+}
+.team-caption ul li a i.fa.fa-facebook{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border: solid 2px #FFF;
+    background: none;
+    color: #FFF;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.team-caption ul li a i.fa.fa-facebook:hover {
+    background: #3b5998;
+}
+.team-caption ul li a i.fa.fa-twitter{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border: solid 2px #FFF;
+    background: none;
+    color: #FFF;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.team-caption ul li a i.fa.fa-twitter:hover{
+	background: #55acee;
+}
+.team-caption ul li a i.fa.fa-rss{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border: solid 2px #FFF;
+    background: none;
+    color: #FFF;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.team-caption ul li a i.fa.fa-rss:hover{
+	background: #f26522;
+}
+.team-caption {
+    background: #f48731;
+    padding: 1em;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    -webkit-transition: .5s all;
+    transition: .5s all;
+    -moz-transition: .5s all;
+}
+.team-info:hover .team-caption{
+    background-color: transparent;
+    top: 50%;
+    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    bottom: auto;
+}
+.team-info:hover .team-caption h4{
+	color:#FFFFFF;
+}
+.team-info:before {
+    background-color: rgba(0,0,0,0.85);
+    border: 3px solid #f48731;
+    bottom: 0;
+    content: "";
+    display: inline-block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.team-info:hover:before {
+    opacity: 1;
+}
+/*-- //team --*/
+/*-- /responsive--*/
+@media (max-width: 991px){
+	.agileits-team-grid {
+		float: left;
+		width: 50%;
+	}
+
+	.agileits-team-grid:nth-child(3),.agileits-team-grid:nth-child(4){
+		margin:2em 0 0 0;
+	}
+}
+@media (max-width:414px){
+	.w3ls-services-grids, .agileits-team-grids, .w3layouts-contact-grids {
+		margin: 2em 0 0 0;
+	}
+	.agileits-team-grid {
+		float: none;
+		width: 100%;
+	}
+	.agileits-team-grid:nth-child(2){
+		margin:2em 0 0 0;
+	}
+}
+/*-- //responsive--*/

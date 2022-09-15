@@ -1,0 +1,286 @@
+body {
+    background: #fff;
+}
+
+.navbar-header img {
+    width: 200px;
+}
+
+.rw-wrapper {
+    position: relative;
+    padding: 0 0 0 10px;
+    overflow: hidden;
+}
+
+.rw-sentence {
+    font-family: 'tradegothiclt-bold', sans-serif;
+    margin: 0;
+    text-align: left;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+.rw-sentence span {
+    color: #fff;
+    white-space: nowrap;
+    font-size: 2.8em;
+    letter-spacing: 1px;
+    font-weight: normal;
+    line-height: 64px;
+}
+
+@-ms-keyframes rotateWord {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+        -ms-transform: rotate(0deg);
+    }
+    19% {
+        opacity: 1;
+        -ms-transform: rotate(98deg);
+    }
+    21% {
+        opacity: 1;
+        -ms-transform: rotate(86deg);
+    }
+    23% {
+        opacity: 1;
+        -ms-transform: translateY(85px) rotate(83deg);
+    }
+    25% {
+        opacity: 0;
+        -ms-transform: translateY(170px) rotate(80deg);
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes rotateWord {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    19% {
+        opacity: 1;
+        -webkit-transform: rotate(98deg);
+        transform: rotate(98deg);
+    }
+    21% {
+        opacity: 1;
+        -webkit-transform: rotate(86deg);
+        transform: rotate(86deg);
+    }
+    23% {
+        opacity: 1;
+        -webkit-transform: translateY(85px) rotate(83deg);
+        transform: translateY(85px) rotate(83deg);
+    }
+    25% {
+        opacity: 0;
+        -webkit-transform: translateY(170px) rotate(80deg);
+        transform: translateY(170px) rotate(80deg);
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width:1080px) {
+    .rw-sentence span {
+        font-size: 2.5em;
+        line-height: 64px;
+    }
+}
+
+@media (max-width:768px) {
+    .rw-sentence {
+        font-size: 1em;
+    }
+}
+
+@media (max-width:667px) {
+    .rw-sentence span {
+        font-size: 2.2em;
+        line-height: 64px;
+    }
+}
+
+@media (max-width:600px) {
+    .rw-sentence span {
+        font-size: 2em;
+        line-height: 55px;
+    }
+}
+
+@media (max-width:480px) {
+    .rw-sentence span {
+        font-size: 1.5em;
+        line-height: 46px;
+    }
+}
+
+@media (max-width:384px) {
+    .rw-sentence span {
+        font-size: 1.5em;
+        line-height: 40px;
+        letter-spacing: 0px;
+    }
+}
+
+@media (max-width:375px) {
+    .rw-sentence span {
+        font-size: 1.4em;
+        line-height: 40px;
+        letter-spacing: 0px;
+    }
+}
+
+
+/* page title */
+
+.page-title {
+    position: relative;
+    padding: 30px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-position: center top;
+    background: #DFDFDF;
+}
+
+.page-title h1 {
+    position: relative;
+    color: #333;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin-bottom: 15px;
+}
+
+.page-title .page-breadcrumb {
+    position: relative;
+}
+
+.page-title .page-breadcrumb li {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    padding-right: 10px;
+    color: #666;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.page-title .page-breadcrumb li:after {
+    position: absolute;
+    content: '\f105';
+    right: -4px;
+    top: 0px;
+    color: #111;
+    font-family: 'FontAwesome';
+}
+
+.page-title .page-breadcrumb li:last-child::after {
+    display: none;
+}
+
+.page-title .page-breadcrumb li:last-child {
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+.page-title .page-breadcrumb li a {
+    color: #f48731;
+    font-weight: 500;
+}
+
+.page-title .info-bubble {
+    position: relative;
+    margin-right: 70px;
+}
+
+.page-title .info-bubble .info-inner {
+    position: relative;
+    max-width: 500px;
+    float: right;
+    width: 100%;
+    text-align: left;
+    background-color: #f48731;
+    padding: 42px 30px 25px 45px;
+}
+
+.page-title .info-bubble .info-inner:after {
+    position: absolute;
+    content: '';
+    left: 65px;
+    bottom: -20px;
+    border-top: 25px solid #f48731;
+    border-right: 28px solid transparent;
+}
+
+.page-title .info-bubble .info-inner h2 {
+    position: relative;
+    color: #242424;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.4em;
+    margin-bottom: 15px;
+}
+
+.page-title .info-bubble .info-inner .text {
+    position: relative;
+    color: #242424;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6em;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* TYPING EFFECT IN SLIDER HOME PAGE */
+
+.h1typing {
+    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+    animation: typewriter 2s steps(13) infinite alternate, blink 800ms steps(13) infinite normal;
+    border-right: 5px solid black;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: black;
+    }
+    to {
+        border-color: transparent;
+    }
+}
